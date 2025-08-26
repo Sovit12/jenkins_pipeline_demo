@@ -7,7 +7,8 @@ pipeline {
    stages {
        stage('Clone') {
            steps {
-               git 'https://github.com/Sovit12/jenkins_pipeline_demo.git'
+              git branch: 'main',
+               url: 'https://github.com/Sovit12/jenkins_pipeline_demo.git'
            }
        }
        stage('Build') {
